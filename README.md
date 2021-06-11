@@ -3,6 +3,7 @@
 It is needed to be familiar with the Deadlock problem and how to solve it. Therefore, it is required to apply the deadlock avoidance algorithms by applying the Banker's algorithm. You will write a Java code that implements the banker’s algorithm: processes request and release resources and the banker will grant a request only if it leaves the system in a safe state. A request is denied if it leaves the system in an unsafe state.
 The bank will employ the strategy outlined in the textbook & lectures whereby it will consider requests from n processes for m resources. The bank will keep track of the resources using the following data structures:
 int [] available;	//the available amount of each resource int [][] maximum;	//the maximum demand of each process.
+
 int [][] allocation;	//the amount currently allocated to each process int [][] need;	//the remaining needs of each process.
 
 
